@@ -48,7 +48,7 @@ static const char wifiPassword[] = "your wifi's passwd";  // Your wifi password 
 /* MQTT Settings */
 static const char mqttServer[] = "ip of mqtt server";  //your MQTT server IP or network name
 const int mqttPort = 1883;  //1883 is the default port for MQTT. Change if necessary
-static const char mqttDeviceID[] = "Device NAme";  //Unique device ID
+static const char mqttDeviceID[] = "Device Name";  //Unique device ID
 
 // constants won't change. Used here to set a pin number:
 const int ledPin = 2;// the number of the LED pin
