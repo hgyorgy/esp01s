@@ -24,7 +24,7 @@
    https://github.com/Links2004/arduinoWebSockets
    
    Created: hgyorgy
-   https://github.com/hgyorgy/esp01
+   https://github.com/hgyorgy/esp01s
    
 */
 /****************************************
