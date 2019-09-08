@@ -1,6 +1,6 @@
 
 /*
-   ESP8266 Web server with Web Socket to control an RELAY.
+   ESP8266 Web server with Web Socket to control a RELAY, and conntrolled by MQTT.
 
    The web server keeps all clients' RELAY status up to date and any client may
    turn the RELAY on or off.
@@ -14,6 +14,9 @@
    References:
 
    https://github.com/Links2004/arduinoWebSockets
+   
+   Created: hgyorgy
+   https://github.com/hgyorgy/esp01
    
 */
 /****************************************
