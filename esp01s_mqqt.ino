@@ -236,6 +236,7 @@ void write_eeprom(bool relayState) {
    EEPROM.commit();
 }
 
+//mqtt_messages recived
 void messageReceived(String &subscribeTopic, String &payload) 
 {
   String msgString = payload;
@@ -254,6 +255,7 @@ void messageReceived(String &subscribeTopic, String &payload)
   }
 }
 
+//Check the mqtt connection
 void mqtt_checkconnect() {
   // Loop until we're reconnected
   while (!mqttClient.connected()) {
@@ -276,6 +278,7 @@ void mqtt_checkconnect() {
   }
 }
 
+//Check the wifi connection
 void wifi_checkconnect() {
    //Start Wifi connecting
   Serial.println( "Check WIFI connetion with " );
@@ -403,11 +406,6 @@ void loop()
   mqtt_checkconnect();
   
   delay(10);
-
-//  if(!mqttClient.connected()) 
-//  {
-//    connect();
-//  }
   
   webSocket.loop();
   server.handleClient();
