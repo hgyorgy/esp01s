@@ -23,5 +23,6 @@ The main goals are:
 - Universal for relay boards with ESP8266 and ESP31s
 - Remember last state during restart (reconnect, re-state..etc)
 - Clearly MQTT controlled, ready to be controlled by Home Automation server, like OpenHAB
+- What I've Just put it into the wall, behind the plug..
 
 (This was my first project with arduino.)
