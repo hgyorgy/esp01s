@@ -11,6 +11,14 @@
    the RELAY off, the word LED changes color to green on clientA and clientB web
    pages.
 
+   EEPROM Writing
+   Stores values read from input 0 into the EEPROM. These values will stay in 
+   the EEPROM when the board is Turned off or on and may the relay will switch back 
+   its original state after a reboot.
+
+   ...and of course, fully MQTT controlled
+   
+   
    References:
 
    https://github.com/Links2004/arduinoWebSockets
@@ -34,8 +42,8 @@
   Define Constants
 ****************************************/
 /* WIFI Settings */
-static const char wifiSSID[] = "WIFI";             // Your WifiSSID here
-static const char wifiPassword[] = "WIFIPASS";  // Your wifi password here
+static const char wifiSSID[] = "your wifi's ssid";             // Your WifiSSID here
+static const char wifiPassword[] = "your wifi's passwd";  // Your wifi password here
 
 /* MQTT Settings */
 static const char mqttServer[] = "ip of mqtt server";  //your MQTT server IP or network name
