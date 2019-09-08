@@ -20,8 +20,8 @@ Fully MQTT controlled
 
 
 The main goals are:
-Universal for Sonoff and other custom relay boards with ESP8266 and ESP31s
-Remember last state during restart (reconnect, re-state..etc)
-Clearly MQTT controlled, ready to be controlled by Home Automation server, like OpenHAB
+- Universal for Sonoff and other custom relay boards with ESP8266 and ESP31s
+- Remember last state during restart (reconnect, re-state..etc)
+- Clearly MQTT controlled, ready to be controlled by Home Automation server, like OpenHAB
 
 (This was my first project with arduino.)
