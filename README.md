@@ -16,11 +16,10 @@ Stores values read from input 0 into the EEPROM.
 These values will stay in the EEPROM when the board is
 Turned off or on and may the relay will switch back its original state after a reboot.
 
-MQQT
 Fully MQTT controlled
 
 
 The main goals are:
-Universal for Sonoff and other custom maed relay boards with ESP8266 and ESP31s
-Remember last state during restart
-Clearly MQTT controlled, ready to be controlled by Home Automation server, like HomeAssistant
+Universal for Sonoff and other custom relay boards with ESP8266 and ESP31s
+Remember last state during restart (reconnect, re-state..etc)
+Clearly MQTT controlled, ready to be controlled by Home Automation server, like OpenHAB
