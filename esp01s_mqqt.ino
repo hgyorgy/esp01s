@@ -79,6 +79,7 @@ int wifiRetry = 0;
 /****************************************
   Constructors
 ****************************************/
+
 //Initialize Wifi
 WiFiClient WiFiLan;
 
@@ -93,7 +94,9 @@ WebSocketsServer webSocket = WebSocketsServer(81);
 MDNSResponder mdns;
 
 
-//Webpage
+/****************************************
+  Webpage
+****************************************/
 static const char PROGMEM INDEX_HTML[] = R"rawliteral(
 <!DOCTYPE html>
 <html>
@@ -142,7 +145,7 @@ function buttonclick(e) {
 /****************************************
 Auxiliar Functions
 ****************************************/
-
+//Websocket events
 void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length)
 {
   Serial.printf("webSocketEvent(%d, %d, ...)\r\n", num, type);
@@ -305,6 +308,7 @@ void wifi_checkconnect() {
 /****************************************
 Main Functions
 ****************************************/
+
 void setup()
 {
   // Useful for debugging purposes
