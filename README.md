@@ -14,7 +14,7 @@ EEPROM Writing
  
 Stores values read from input 0 into the EEPROM.
 These values will stay in the EEPROM when the board is
-Turned off or on and may the relay will switch back its original state after a reboot.
+Turned off or on and may the relay will switch back its original state after a reboot or a shutdown.
 
 Fully MQTT controlled
 
