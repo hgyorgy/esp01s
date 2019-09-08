@@ -64,8 +64,8 @@ const char RELAYOFF[] = "relayOff";
 ****************************************/
 // Variables will change:
 
-char* subscribeTopic = "SmartHouse/utilities/Relay01/command";      // Topic where send command
-char* stateTopic = "SmartHouse/utilities/Relay01/state";            // Topic which listens for commands
+char* subscribeTopic = "SmartHouse/utilities/relay01/command";      // Topic where send commands
+char* stateTopic = "SmartHouse/utilities/relay01/state";            // Topic for listening commands
 
 static void writeLED(bool);
 
@@ -133,7 +133,7 @@ function buttonclick(e) {
 </script>
 </head>
 <body onload="javascript:start();">
-<h1>ESP8266 WebSocket Switch 1</h1>
+<h1>ESP8266 WebSocket (relay control)</h1>
 <div id="RELAYstatus"><b>RELAY</b></div>
 <button id="relayOn"  type="button" onclick="buttonclick(this);">On</button> 
 <button id="relayOff" type="button" onclick="buttonclick(this);">Off</button>
